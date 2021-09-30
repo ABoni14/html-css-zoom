@@ -32,7 +32,6 @@ header{
 /* MAIN */
 main{
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
   height: calc(100vh - 150px);
   background-color: black;
@@ -40,9 +39,10 @@ main{
 }
 
 .block{
+  position: relative;
   width: 363px;
   height: 210px;
-  padding: 2px;
+  padding: 3px;
 }
 
 .block img{
@@ -50,9 +50,61 @@ main{
   height: 100%;
 }
 
+.tag-user{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 18px;
+  padding: 5px 8px;
+}
 /* //MAIN */
 
+/* FOOTER */
 footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 100px;
+  color: white;
   background-color: #232123;
 }
+
+.foot-left, .foot-center, .foot-right{
+  display: flex;
+  align-items: center;
+}
+
+.fa-chevron-up{
+  padding: 0 10px;
+}
+
+.box-foot{
+  margin: 10px;
+  cursor: pointer;
+}
+
+.box-foot i{
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+#active{
+  color: #4bc800;
+}
+
+.foot-right{
+  height: 100px;
+  padding: 0 20px;
+  background-color: #4a4a4a;
+  color: #ff0000;
+  cursor: pointer;
+}
+/* //FOOTER */
+
+
+
